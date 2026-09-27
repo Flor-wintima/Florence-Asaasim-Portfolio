@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Florence Asaasim - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Florence Asaasim
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          f.asasim@alustudent.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +23058589309
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/florence.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Florence Asaasim! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a first-year Computer Science student with a passion for technology,
+            problem-solving, and continuous learning. I am currently exploring different
+            areas of technology while building my skills through hands-on projects and
+           practical experience.
+         </p>
+
+           <p>
+             I have completed the Google IT Support Professional Certificate and have
+             developed a foundation in programming with Java and C. I am also building
+             experience in web development, software development, and tools such as
+             Git and GitHub.
+         </p>
+
+           <p>
+             I enjoy turning what I learn into practical projects, asking questions, and
+             challenging myself to understand how things work. I am continuing to grow as
+             a developer and explore where my interests and strengths can take me in the
+             technology field.
+         </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+
+  <div class="skill">
+    <img src="html_finalprojimages/html5.png"/>
+    <h6>HTML</h6>
+    <p>Learning and building web pages</p>
+  </div>
+
+  <div class="skill">
+    <img src="html_finalprojimages/js.jpeg"/>
+    <h6>JavaScript</h6>
+    <p>Learning and practicing web development</p>
+  </div>
+
+  <div class="skill">
+    <img src="html_finalprojimages/java.png"/>
+    <h6>Java</h6>
+    <p>Developing applications and practicing OOP</p>
+  </div>
+
+  <div class="skill">
+    <img src="html_finalprojimages/CSS3.png"/>
+    <h6>CSS</h6>
+    <p>Styling and designing web pages</p>
+  </div>
+
+  <div class="skill">
+    <img src="html_finalprojimages/github.png"/>
+    <h6>Git & GitHub</h6>
+    <p>Version control and project management</p>
+  </div>
+
+</div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>EcoCycle Tracker</h3>
+            <ul>
+              <li> Developed a Java-based recycling tracker that allows households to
+                   register, record recycling events, track recycled materials and earn
+                   EcoPoints</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Byte Brew Cafe</h3>
+            <ul>
+              <li> Developed a Java cafe management system for creating and managing
+                   customer orders, searching orders, generating sales reports and
+                   producing receipts</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>School Management System</h3>
+            <ul>
+              <li>Developed a Java-based school management project using object-oriented
+                  programming concepts to model and manage different aspects of a school system</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Florence is a dedicated learner who consistently puts effort into
+          understanding new technical concepts. She is curious, asks questions,
+          and applies what she learns through practical projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+           Florence approaches technical challenges with determination and a
+           willingness to learn. She takes the initiative to explore new
+           technologies and enjoys sharing what she learns with others.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Florence is a collaborative and motivated student who contributes
+          actively to group work. She combines her interest in technology with
+          a strong desire to keep improving her skills and building practical solutions
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="html_finalprojimages/home.png"/>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
